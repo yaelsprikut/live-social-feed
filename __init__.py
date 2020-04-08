@@ -1,8 +1,10 @@
 import os
+import sys
 
 from flask import Flask
 from markupsafe import escape
 
+sys.dont_write_bytecode = True
 
 def create_app(test_config=None):
     # create and configure the app
